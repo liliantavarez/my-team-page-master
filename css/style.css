@@ -1,0 +1,139 @@
+body {
+    margin: auto;
+    width: 1440px;
+    height: 1489px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 102px 235px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between
+}
+
+h1 {
+    margin: 0;
+    font-family: 'PT Serif';
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+h3 {
+    display: inline;
+    width: 117px;
+    height: 27px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-transform: uppercase;
+}
+
+#img01,
+#img03 {
+    width: 238px;
+    height: 341px;
+}
+
+#img02,
+#img05 {
+    width: 238px;
+    height: 347px;
+}
+
+#img04,
+#img06 {
+    width: 237px;
+    height: 341px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 48px 136px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "photo01 photo02 photo03"
+        "photo04 photo05 photo06";
+}
+
+.photo01 {
+    grid-area: photo01;
+}
+
+.photo02 {
+    grid-area: photo02;
+    margin-top: 20%;
+}
+
+.photo03 {
+    grid-area: photo03;
+}
+
+.photo04 {
+    grid-area: photo04;
+}
+
+.photo05 {
+    grid-area: photo05;
+    margin-top: 20%;
+}
+
+.photo06 {
+    grid-area: photo06;
+}
+
+
+.name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 15%;
+    /* identical to box height */
+}
+
+.profession {
+    font-family: 'PT Serif';
+    font-size: 12px;
+    margin-top: -35%;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+    transform: rotate(90deg);
+}
+
+.lineOne {
+    display: flex;
+    justify-content: space-between
+}
+
+p {
+    width: 439px;
+    height: 87px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+footer {
+    position: absolute;
+    width: 287px;
+    height: 17px;
+    left: 547px;
+    top: 1448px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    color: #A9A9A9;
+}
