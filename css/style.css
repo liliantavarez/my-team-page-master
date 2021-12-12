@@ -116,12 +116,11 @@ footer {
     color: #A9A9A9;
 }
 
-@media (max-width: 360px) {
-    body {
+@media (max-width: 375px) {
+    body{
         width: 375px;
-        height: 1409px;
+        padding: 19px;
     }
-
     header {
         display: flex;
         flex-direction: column;
