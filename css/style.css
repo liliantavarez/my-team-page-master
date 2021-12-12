@@ -63,32 +63,10 @@ h3 {
         "photo04 photo05 photo06";
 }
 
-.photo01 {
-    grid-area: photo01;
-}
-
-.photo02 {
-    grid-area: photo02;
-    margin-top: 20%;
-}
-
-.photo03 {
-    grid-area: photo03;
-}
-
-.photo04 {
-    grid-area: photo04;
-}
-
+.photo02,
 .photo05 {
-    grid-area: photo05;
     margin-top: 20%;
 }
-
-.photo06 {
-    grid-area: photo06;
-}
-
 
 .name {
     font-family: 'Poppins';
@@ -136,4 +114,92 @@ footer {
     /* identical to box height */
     text-align: center;
     color: #A9A9A9;
+}
+
+@media (max-width: 360px) {
+    body {
+        width: 375px;
+        height: 1409px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 138.72px 138.72px;
+        grid-template-rows: 261.4px 261.4px 261.4px;
+        gap: 25px 25px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". ."
+            ". ."
+            ". .";
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 21px;
+        width: 333px;
+        height: 87px;
+
+    }
+
+    #img01 {
+        width: 138.72px;
+        height: 209px;
+    }
+
+    #img02 {
+        width: 138.35px;
+        height: 209px;
+    }
+
+    #img03 {
+        width: 139px;
+        height: 219.44px;
+    }
+
+    #img04 {
+        width: 139px;
+        height: 220.46px;
+
+    }
+
+    #img05 {
+        width: 139px;
+        height: 226px;
+    }
+
+    #img06 {
+        width: 139.35px;
+        height: 220px;
+    }
+    .name {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: -10%;
+        /* identical to box height */
+    }
+    .profession {
+        font-family: 'PT Serif';
+        font-size: 12px;
+        margin-top: -60%;
+        margin-left: -40%;
+        line-height: 16px;
+        /* identical to box height */
+        text-transform: uppercase;
+        transform: rotate(90deg);
+    }
+    .photo05{
+        margin: 0;
+    }
+    .right{
+        margin-top: 60%;
+    }
+
 }
