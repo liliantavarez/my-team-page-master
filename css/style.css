@@ -55,8 +55,8 @@ h3 {
 .images {
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: 277px 277px 277px; 
-    grid-template-rows: 469px 469px; 
+    grid-template-columns: 277px 277px 277px;
+    grid-template-rows: 469px 469px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -85,11 +85,6 @@ h3 {
     transform: rotate(90deg);
 }
 
-.lineOne {
-    display: flex;
-    justify-content: space-between
-}
-
 p {
     width: 439px;
     height: 87px;
@@ -110,7 +105,50 @@ p {
     align-items: flex-end;
 }
 
-@media (max-width: 375px) {
+/* responsive to tablet */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        width: 768px;
+    }
+
+    header {
+        padding: 15px 25px;
+    }
+    .description{
+        width: 371px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 277px 277px;
+        grid-template-rows: 469px 469px 469px;
+        gap: 89px 57px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo01 photo02"
+            "photo03 photo04"
+            "photo05 photo06";
+    }
+
+    .photo04, .photo06 {
+        margin-top: 20%;
+    }
+    
+    .photo05 {
+        margin-top: 0;
+    }
+    .profession{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/* Smartphone 
+@media (max-width: 767px) {
     body{
         width: 375px;
         padding: 19px;
@@ -194,3 +232,4 @@ p {
     }
 
 }
+*/
