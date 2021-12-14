@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=PT+Serif:wght@400;700&family=Poppins:wght@100;300;400&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 1024px;
     background: #FFFFFF;
@@ -52,16 +54,26 @@ h3 {
     height: 341px;
 }
 
+footer {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    margin: auto;
+    align-items: flex-end;
+    font-weight: 500;
+}
+
 .images {
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: 277px 277px 277px;
     grid-template-rows: 469px 469px;
-    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "photo01 photo02 photo03"
         "photo04 photo05 photo06";
+    margin: 100px 0;
 }
 
 .photo02,
@@ -69,53 +81,47 @@ h3 {
     margin-top: 20%;
 }
 
-.name {
+.description {
+    width: 372px;
     font-family: 'Poppins';
-    font-weight: 600;
     font-size: 18px;
     line-height: 27px;
 }
 
 .profession {
+    width: 500px;
+    margin-top: -154px;
     font-family: 'PT Serif';
     font-size: 12px;
-    margin-top: -35%;
     line-height: 16px;
     text-transform: uppercase;
     transform: rotate(90deg);
 }
 
-p {
-    width: 439px;
-    height: 87px;
+.name {
+    display: inline-block;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-}
-
-#create {
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    line-height: 17px;
-    color: #A9A9A9;
-    margin: auto;
-    align-items: flex-end;
 }
 
 /* responsive to tablet */
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
         width: 768px;
     }
 
     header {
         padding: 15px 25px;
     }
-    .description{
+
+    .description {
         width: 371px;
     }
 
@@ -131,31 +137,30 @@ p {
             "photo05 photo06";
     }
 
-    .photo04, .photo06 {
+    .photo04,
+    .photo06 {
         margin-top: 20%;
     }
-    
+
     .photo05 {
         margin-top: 0;
     }
-    .profession{
+
+    .profession {
         font-size: 18px;
     }
 }
 
-
-
-
-
-/* Smartphone 
+/* responsive to smartphone */
 @media (max-width: 767px) {
-    body{
+    body {
         width: 375px;
-        padding: 19px;
     }
+
     header {
         display: flex;
         flex-direction: column;
+        padding: 5px 15px;
     }
 
     .images {
@@ -168,14 +173,6 @@ p {
             ". ."
             ". ."
             ". .";
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 21px;
-        width: 333px;
-        height: 87px;
-
     }
 
     #img01 {
@@ -208,6 +205,7 @@ p {
         width: 139.35px;
         height: 220px;
     }
+
     .name {
         font-family: 'Poppins';
         font-weight: 600;
@@ -215,21 +213,27 @@ p {
         line-height: 27px;
         margin-top: -10%;
     }
+
     .profession {
+        width: 298px;
+        margin-top: -103px;
         font-family: 'PT Serif';
         font-size: 12px;
-        margin-top: -60%;
-        margin-left: -40%;
         line-height: 16px;
         text-transform: uppercase;
         transform: rotate(90deg);
     }
-    .photo05{
+
+    .photo05 {
         margin: 0;
     }
-    .right{
+
+    .right {
         margin-top: 60%;
     }
 
+    .description {
+        width: 333px;
+    }
+
 }
-*/
